@@ -16,7 +16,7 @@ import static org.junit.Assert.assertThat;
 public class CalculateTest {
 	/**
 	 * Test add.
-	 */	
+	 */
     @Test
     public void whenExecuteMainThenPrintToConsole() {
 	    ByteArrayOutputStream out = new ByteArrayOutputStream();
@@ -32,4 +32,4 @@ public class CalculateTest {
                 )
         );
     }
-} 
+}
