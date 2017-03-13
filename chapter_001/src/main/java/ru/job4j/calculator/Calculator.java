@@ -1,29 +1,52 @@
 package ru.job4j.calculator;
 
 /**
- * класс Calculator. Решение задачи урока 2.3 части 001. Создание элементарного калькулятора.
+ * Элементарный калькулятор.
+ *
  * @author Aleksey Kosolapov.
- * @since 12.03.17.
  * @version 0.1.
+ * @since 12.03.17.
  */
 
 public class Calculator {
+	/**
+	* объявление внутреннего поля result.
+	*/
     private double result;
-    
-    public void add(double first, double second) {
-        this.result = first + second;
+    /**
+	* add метод, производящий сложение.
+	* @param first - second.
+	*/
+	public void add(double first, double second) {
+	    this.result = first + second;
     }
+	/**
+	* substruct метод, производящий вычитание.
+	* @param first - second.
+	*/
     public void substruct(double first, double second) {
         this.result = first - second;
 	}
+	/**
+	* div метод, производящий деление.
+	* @param first - second.
+	*/
 	public void div(double first, double second) {
         this.result = first / second;
-	]
+	}
+	/**
+	* multiple метод, производящий умножение.
+	* @param first - second.
+	*/
 	public void multiple(double first, double second) {
         this.result = first * second;
 	}
+	/**
+	* getResult() метод, возвращающий значение result.
+	* @return result.
+	*/
 	public double getResult() {
-        return this.result;
-    }	
-}	
+		return this.result;
+    }
+}
 
