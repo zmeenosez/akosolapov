@@ -15,7 +15,7 @@ import static org.junit.Assert.assertThat;
 
 public class CalculatorTest {
 	/**
-	 * Test add,substruct,div,multiple.
+	 * Test add.
 	 */
 	 @Test
     public void whenAddOnePlusOneThenTwo() { //сложение
@@ -24,7 +24,10 @@ public class CalculatorTest {
         double result = calc.getResult();
         double expected = 2D;
         assertThat(result, is(expected));
-    }	  
+    }
+	/**
+	 * Test substruct.
+	 */
 	 @Test
     public void whenAddOnePlusOneThenTwo() { //вычитание
         Calculator calc = new Calculator();
@@ -33,6 +36,9 @@ public class CalculatorTest {
         double expected = 7D;
         assertThat(result, is(expected));
     }
+	/**
+	 * Test div.
+	 */
 	 @Test
     public void whenAddOnePlusOneThenTwo() { //деление
         Calculator calc = new Calculator();
@@ -41,6 +47,9 @@ public class CalculatorTest {
         double expected = 4D;
         assertThat(result, is(expected));
     }
+	/**
+	 * Test multiple.
+	 */
     @Test
     public void whenAddOnePlusOneThenTwo() { //умножение
         Calculator calc = new Calculator();
