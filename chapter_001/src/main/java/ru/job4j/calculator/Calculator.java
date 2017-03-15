@@ -15,28 +15,32 @@ public class Calculator {
     private double result;
     /**
 	* add метод, производящий сложение.
-	* @param first - second.
+	* @param first first number.
+    * @param second second number.
 	*/
 	public void add(double first, double second) {
 	    this.result = first + second;
     }
 	/**
 	* substruct метод, производящий вычитание.
-	* @param first - second.
+	* @param first first number.
+    * @param second second number.
 	*/
     public void substruct(double first, double second) {
         this.result = first - second;
 	}
 	/**
 	* div метод, производящий деление.
-	* @param first - second.
+	* @param first first number.
+    * @param second second number.
 	*/
 	public void div(double first, double second) {
         this.result = first / second;
 	}
 	/**
 	* multiple метод, производящий умножение.
-	* @param first - second.
+	* @param first first number.
+    * @param second second number.
 	*/
 	public void multiple(double first, double second) {
         this.result = first * second;
