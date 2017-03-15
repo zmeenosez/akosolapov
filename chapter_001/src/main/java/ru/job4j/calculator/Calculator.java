@@ -9,46 +9,46 @@ package ru.job4j.calculator;
  */
 
 public class Calculator {
-	/**
-	* объявление внутреннего поля result.
-	*/
+		/**
+		* объявление внутреннего поля result.
+		*/
     private double result;
-    /**
-	* add метод, производящий сложение.
-	* @param first first number.
-    * @param second second number.
-	*/
+		/**
+		* add метод, производящий сложение.
+		* @param first first number.
+		* @param second second number.
+		*/
 	public void add(double first, double second) {
 	    this.result = first + second;
     }
-	/**
-	* substruct метод, производящий вычитание.
-	* @param first first number.
-    * @param second second number.
-	*/
+		/**
+		* substruct метод, производящий вычитание.
+		* @param first first number.
+		* @param second second number.
+		*/
     public void substruct(double first, double second) {
         this.result = first - second;
 	}
-	/**
-	* div метод, производящий деление.
-	* @param first first number.
-    * @param second second number.
-	*/
+		/**
+		* div метод, производящий деление.
+		* @param first first number.
+		* @param second second number.
+		*/
 	public void div(double first, double second) {
         this.result = first / second;
 	}
-	/**
-	* multiple метод, производящий умножение.
-	* @param first first number.
-    * @param second second number.
-	*/
+		/**
+		* multiple метод, производящий умножение.
+		* @param first first number.
+		* @param second second number.
+		*/
 	public void multiple(double first, double second) {
         this.result = first * second;
 	}
-	/**
-	* getResult() метод, возвращающий значение result.
-	* @return result.
-	*/
+		/**
+		* getResult() метод, возвращающий значение result.
+		* @return result.
+		*/
 	public double getResult() {
 		return this.result;
     }
