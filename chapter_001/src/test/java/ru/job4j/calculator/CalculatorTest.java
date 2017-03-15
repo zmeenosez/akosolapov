@@ -29,7 +29,7 @@ public class CalculatorTest {
 	 * Test substruct.
 	 */
 	 @Test
-    public void whenAddOnePlusOneThenTwo() { //вычитание
+    public void whenSubstructNeneMinusTwoThenSeven() { //вычитание
         Calculator calc = new Calculator();
         calc.substruct(9D, 2D);
         double result = calc.getResult();
@@ -40,7 +40,7 @@ public class CalculatorTest {
 	 * Test div.
 	 */
 	 @Test
-    public void whenAddOnePlusOneThenTwo() { //деление
+    public void whenDivEightDivideTwoThenFour() { //деление
         Calculator calc = new Calculator();
         calc.div(8D, 2D);
         double result = calc.getResult();
@@ -51,7 +51,7 @@ public class CalculatorTest {
 	 * Test multiple.
 	 */
     @Test
-    public void whenAddOnePlusOneThenTwo() { //умножение
+    public void whenMultipleThreeMultiplyFourThenTwelve() { //умножение
         Calculator calc = new Calculator();
         calc.multiple(3D, 4D);
         double result = calc.getResult();
