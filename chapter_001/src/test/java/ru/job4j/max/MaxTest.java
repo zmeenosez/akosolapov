@@ -15,14 +15,13 @@ import static org.junit.Assert.assertThat;
 
 public class MaxTest {
 	/**
-	 * Test max.
+	 * Test maximum.
 	 */
 	 @Test
-    public void whenmaxMaxThreeMoreOneThenThree() {
+    public void whenMaximumThreeMoreOneThenThree() {
 		Max max1 = new Max();
-		max1.max(3D, 1D);
-		int maxMax = max1.maxMax;
-		int expected = 3D;
-	assertThat(maxMax, is(expected));
+		int maximum = max1.max(3, 1);
+		int expected = 3;
+	    assertThat(maximum, is(expected));
     }
 }
