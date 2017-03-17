@@ -1,7 +1,7 @@
 package ru.job4j.max;
 
 /**
- * Определение максимума из двух чисел.
+ * Maximum number.
  *
  * @author Aleksey Kosolapov.
  * @version 0.1.
@@ -9,21 +9,13 @@ package ru.job4j.max;
  */
 
  public class Max {
-	 
-	 private int maxMax;
 	 /**
 	  * @param first first number.
 	  * @param second second number.
-	  * @return number.
+	  * @return maximum number.
 	  */
-	 public void int max(int first, int second); {
-	 int maxMax = first >= second ? first : second;
+	 public int max(int first, int second) {
+	 int maximum = first >= second ? first : second;
+	 return maximum;
 	 }
-	 /**
-	  * метод, возвращающий значение.
-	  * @return number.
-	  */
-	 public int maxResult() {
-	 return this.maxMax;
-	 }
- }
+}
