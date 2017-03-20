@@ -21,7 +21,7 @@ import static org.junit.Assert.assertThat;
 		Point coordinat = new Point();
 		coordinat.point(2, 13);
 		coordinat.boolean is(4, 5);
-		int result = y1;
+		int result = y;
 		int expected = 13;
 		assertThat(result, is(expected));
 	}
