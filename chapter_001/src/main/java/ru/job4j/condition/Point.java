@@ -46,10 +46,8 @@ package ru.job4j.condition;
 	* @return true.
 	*/
   public boolean is(int a, int b) {
-	   int y1 = a * x + b;
-	   if (y == y1) {
-	   y = a * x + b;
+	   if (y == a * x + b) {
+	   return  true;
 	   }
-       return true;
-  }
+    }
 }
