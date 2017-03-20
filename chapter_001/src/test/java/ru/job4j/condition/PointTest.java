@@ -17,12 +17,11 @@ import static org.junit.Assert.assertThat;
 	 * Test coordinat.
 	 */
 	 @Test
-    public void whenResultTwotoFourtoFiveThenThirteen() {
-		Point coordinat = new Point();
-		coordinat.point(2, 13);
-		coordinat.boolean is(4, 5);
-		int result = y;
-		int expected = 13;
+    public void whenResultTwotoTwoThenFour() {
+		Point coordinat = new Point(1, 1);
+		coordinat = point.is(2, 2);
+		boolean result = point.is(2, 2);
+		expected = 4;
 		assertThat(result, is(expected));
 	}
  }
