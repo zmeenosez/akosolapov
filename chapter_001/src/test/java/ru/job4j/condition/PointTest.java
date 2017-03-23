@@ -17,11 +17,10 @@ import static org.junit.Assert.assertThat;
 	 * Test coordinat.
 	 */
 	 @Test
-    public void whenResultTwotoTwoThenFour() {
-		Point coordinat = new Point(1, 1);
-		coordinat = point.is(2, 2);
-		boolean result = point.is(2, 2);
-		expected = 4;
+    public void whenResultOnetoTwoThenTrue() {
+		Point coordinat = new Point(2, 4);
+		boolean result = coordinat.is(1, 2);
+		boolean expected = true;
 		assertThat(result, is(expected));
 	}
  }
