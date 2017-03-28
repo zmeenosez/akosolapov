@@ -2,7 +2,6 @@ package ru.job4j.condition;
 
 import org.junit.Test;
 import static org.hamcrest.number.IsCloseTo.closeTo;
-import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
 /**
@@ -18,13 +17,13 @@ import static org.junit.Assert.assertThat;
 	 * Test calculate the triangle.
 	 */
 	 @Test
-    public void whenresultTwotoOnetoTwotwentyfourhundredthsThenZeroninetyninehundredths () {
+    public void whenresultTwotoOnetoTwotwentyfourhundredthsThenZeroninetyninehundredths() {
 		Point a = new Point(2, 3);
         Point b = new Point(4, 3);
         Point c = new Point(4, 4);
-		Triangle coordinat = new Triangle( a, b, c );
-		double result = coordinat.area( 2, 1, 2,24 );
-		double except = 0,99;
+		Triangle coordinat = new Triangle(a, b, c);
+		double result = coordinat.area(2, 1, 2.24);
+		double except = 0.99;
 		assertThat(result, closeTo(except, 0.99));
 	}
  }
