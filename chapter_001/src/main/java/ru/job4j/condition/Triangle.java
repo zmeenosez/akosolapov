@@ -31,14 +31,7 @@ package ru.job4j.condition;
     this.b = b;
     this.c = c;
     }
-	/**
-     * вычисление сторон треугольника.
-	 * @return sideLength.
-	 * @param coordinat number.
-     */
-	double sideLength(Point coordinat) {
-    return Math.sqrt((Math.pow((coordinat.x - this.x), 2)) + (Math.pow((coordinat.y - this.y), 2)));
-    }
+
    /**
 	* Calculate the triangle area.
 	* @return s.
@@ -51,7 +44,7 @@ package ru.job4j.condition;
      */
     if ((absideLength + bcsideLength) > casideLength
 	|| (absideLength + casideLength) > bcsideLength
-	|| (bcsideLengthb + casideLength) > absideLength) {
+	|| (bcsideLength + casideLength) > absideLength) {
 		/**
 		 * вычисляем полупериметр треугольника.
 		 */
@@ -61,11 +54,11 @@ package ru.job4j.condition;
 		 */
 		double s = (Math.sqrt(p * (p - absideLength) * (p - bcsideLength) * (p - casideLength)));
         } else {
-		double s = 0; //треугольник не существует.
+	    double s = 0.00; //треугольник не существует.
         }
-        return s;
-	}
- }
+		return  s;
+    }
+}
 
 
 
