@@ -17,14 +17,14 @@ import static org.junit.Assert.assertThat;
 	 * Test calculate the triangle.
 	 */
 	 @Test
-    public void whenresultTwotoOnetoTwotwentyfourhundredthsThenZeroninetyninehundredths() {
-		Point a = new Point(2, 3);
-        Point b = new Point(4, 3);
-        Point c = new Point(4, 4);
+    public void whenResultCoordinatThenDoubleExcept() {
+		Point a = new Point(5, 6);
+        Point b = new Point(3, 8);
+        Point c = new Point(7, 3);
 		Triangle coordinat = new Triangle(a, b, c);
-		double result = coordinat.area(2, 1, 2.24);
-		double except = 0.99;
-		assertThat(result, closeTo(except, 0.99));
+		double result = coordinat.area();
+		double except = 1.14;
+		assertThat(result, closeTo(except, 1.14));
 	}
  }
 
