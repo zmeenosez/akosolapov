@@ -48,4 +48,12 @@ package ru.job4j.condition;
   public boolean is(int a, int b) {
 	   return y == a * x + b;
   }
+  /**
+     * вычисление расстояния между двумя точками.
+	 * @return sideLength.
+	 * @param coordinat number.
+     */
+	double sideLength(Point coordinat) {
+    return Math.sqrt((Math.pow((coordinat.x - this.x), 2)) + (Math.pow((coordinat.y - this.y), 2)));
+    }
 }
