@@ -40,6 +40,7 @@ package ru.job4j.condition;
     double absideLength = a.sideLength(b); //сторона от a точки до b точки.
     double bcsideLength = b.sideLength(c); //сторона от b точки до c точки.
     double casideLength = c.sideLength(a); //сторона от c точки до a точки.
+	double s = 0.00;
 	/** определяем условие существования треугольника.
      */
     if ((absideLength + bcsideLength) > casideLength
@@ -52,9 +53,9 @@ package ru.job4j.condition;
 		/**
 		 * вычисляем площадь треугольника.
 		 */
-		double s = (Math.sqrt(p * (p - absideLength) * (p - bcsideLength) * (p - casideLength)));
+	    s = (Math.sqrt(p * (p - absideLength) * (p - bcsideLength) * (p - casideLength)));
         } else {
-	    double s = 0.00; //треугольник не существует.
+	    s = 0.00; //треугольник не существует.
         }
 		return  s;
     }
