@@ -23,7 +23,7 @@ import static org.junit.Assert.assertThat;
         Point c = new Point(7, 3);
 		Triangle coordinat = new Triangle(a, b, c);
 		double result = coordinat.area();
-		double except = 1.14;
+		double except = 1;
 		assertThat(result, closeTo(except, 0.01));
 	}
  }
