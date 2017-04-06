@@ -5,7 +5,7 @@ package ru.job4j.max;
  *
  * @author Aleksey Kosolapov.
  * @version 0.1.
- * @since 15.03.17.
+ * @since 02.04.17.
  */
 
  public class Max {
@@ -17,5 +17,17 @@ package ru.job4j.max;
 	 public int max(int first, int second) {
 	 int maximum = first >= second ? first : second;
 	 return maximum;
+	 }
+	 /**
+	  * Вычисление максимума из трёх чисел.
+	  * @param first number.
+	  * @param second number.
+	  * @param third number.
+	  * @return maxMax number.
+	  */
+	 public int max(int first, int second, int third) {
+	 int maximum = Math.max(first, second);
+	 int maxMax = Math.max(maximum, third);
+	 return maxMax;
 	 }
 }
