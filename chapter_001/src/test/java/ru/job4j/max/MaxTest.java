@@ -24,4 +24,14 @@ public class MaxTest {
 		int expected = 3;
 	    assertThat(maximum, is(expected));
     }
+	/**
+	 * Максимум  из трех чисел.
+	 */
+	 @Test
+    public void whenMaximumThreeMoreTwoMoreOneThenThree() {
+		Max max1 = new Max();
+		int maximum = max1.max(3, 2, 1);
+		int expected = 3;
+	    assertThat(maximum, is(expected));
+    }
 }
