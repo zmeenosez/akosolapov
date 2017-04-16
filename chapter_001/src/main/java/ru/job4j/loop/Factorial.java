@@ -11,13 +11,13 @@ package ru.job4j.loop;
      /**
 	  * calc метод, вычисляющий факториал числа.
 	  * @param n number.
-	  * @return сalculateFactorial.
+	  * @return result.
 	  */
 	  public int calc(int n) {
-	  int сalculateFactorial = 0;
+	  int result = 1;
 	  for (int count = 1; count <= n; count++) {
-      сalculateFactorial *= count;
+      result *= count;
       }
-      return сalculateFactorial;
+      return result;
 	  }
  }
