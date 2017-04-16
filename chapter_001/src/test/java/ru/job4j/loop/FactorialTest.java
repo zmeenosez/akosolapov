@@ -17,24 +17,24 @@ public class FactorialTest {
 	 * Тест , проверяющий, что факториал для числа 5 равен 120.
 	 */
     @Test
-    public void whenCalculateFactorialForFiveThenOneHundreedTwenty() {
+    public void whenResultForFiveThenOneHundreedTwenty() {
         //напишите здесь тест, проверяющий, что факториал для числа 5 равен 120.
 		Factorial factorial = new Factorial();
-		int сalculateFactorial = factorial.calc(5);
+		int result = factorial.calc(5);
 		int expected = 120;
-	    assertThat(сalculateFactorial, is(expected));
+	    assertThat(result, is(expected));
     }
 
 	/**
 	 * Тест , проверяющий, что факториал для числа 0 равен 1.
 	 */
     @Test
-    public void whenCalculateFactorialForZeroThenOne() {
+    public void whenResultForZeroThenOne() {
         //напишите здесь тест, проверяющий, что факториал для числа 0 равен 1.
 		Factorial factorial = new Factorial();
-		int сalculateFactorial = factorial.calc(0);
+		int result = factorial.calc(0);
 		int expected = 1;
-	    assertThat(сalculateFactorial, is(expected));
+	    assertThat(result, is(expected));
     }
 }
 
